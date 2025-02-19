@@ -1,4 +1,4 @@
-document.getElementById("formEmail").addEventListener("submit", async (e) => {
+document.getElementById("formEmail").addEventListener("submit", async (e) => { 
     e.preventDefault();
   
     const form = e.target;
@@ -15,7 +15,7 @@ document.getElementById("formEmail").addEventListener("submit", async (e) => {
     mensagemStatus.classList.add("text-gray-500");
   
     try {
-      const response = await fetch("https://mensageiro-da-infidelidade.onrender.com", {
+      const response = await fetch("https://mensageiro-da-infidelidade.onrender.com/enviar-email", {
         method: "POST",
         body: formData,
       });
