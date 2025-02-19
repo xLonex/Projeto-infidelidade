@@ -59,7 +59,7 @@ app.post("/enviar-email", upload.single("foto"), async (req, res) => {
         <p> <strong> O que fazer com essa informação é uma escolha apenas sua. Seja qual for que decida seguir, lembre-se que você merece transparência e respeito em qualquer relacionamento</strong>
         <p>Entendemos que essa notícia pode ser difícil de lidar, e queremos que saiba que você não está sozinho(a) nessa situação. A dor da traição pode ser avassaladora, mas é importante que busque apoio de amigos, familiares ou profissionais que possam ajudá-lo(a) a enfrentar esse momento.</p>
         <p> POR FAVOR, NÃO RESPONDA A ESSE EMAIL, CASO QUEIRA ENTRAR CONTATO COMIGO (Dono do site) mande email aqui: <link>lgustavaresl@gmail.com</link>
-        <p><strong>Infieis.com</strong></p>
+        <p><a href="https://mensageiro-da-infidelidade.onrender.com" style="color: #0066cc; text-decoration: underline;">Mensageiro da Infidelidade</a></p>
       `;
 
   try {
