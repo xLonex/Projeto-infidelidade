@@ -15,7 +15,7 @@ document.getElementById("formEmail").addEventListener("submit", async (e) => {
     mensagemStatus.classList.add("text-gray-500");
   
     try {
-      const response = await fetch("http://localhost:3000/enviar-email", {
+      const response = await fetch("https://mensageiro-da-infidelidade.onrender.com", {
         method: "POST",
         body: formData,
       });
