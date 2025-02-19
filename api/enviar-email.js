@@ -26,6 +26,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// Servir arquivos estáticos da pasta "src"
+app.use(express.static(path.join(__dirname, "../src")));
+
 // Configuração do Nodemailer
 const transporter = nodemailer.createTransport({
   service: "Gmail",
@@ -82,7 +85,11 @@ app.post("/enviar-email", upload.single("foto"), async (req, res) => {
     res.status(500).json({ success: false, error: err.message });
   }
 });
+// Rota para servir o index.html
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../src/index.html"));
+});
 
 app.listen(3000, () => {
-  console.log("Servidor rodando na porta 3000");
+  console.log("Acaba com eles tigrão !");
 });
