@@ -1,6 +1,6 @@
 document.getElementById("formEmail").addEventListener("submit", async (e) => { 
     e.preventDefault();
-  
+  // só pra avisar que o codigo FUNCIONA !
     const form = e.target;
     const formData = new FormData(form);
     const mensagemStatus = document.getElementById("mensagemStatus");
